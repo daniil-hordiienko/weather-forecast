@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="city-search">
+            <span class="current-city"></span>
+            <form action="" id="search-form">
+                <input type="search" id="city-search-input" placeholder="Type a city.." />
+                <input type="submit" id="btn"/>
+            </form>
+        </div>
+        <div class="current-weather">
+            <!-- <div class="current-weather-icon">
+                <img src="" alt="weather-icon" id="icon">
+            </div> -->
+            <div class="current-weather-info">
+                <img src="" alt="weather-icon" id="icon">
+                <p class="date"></p>
+                <span class="temp"></span>
+                <span class="condition"></span>
+                <ul class="wind-hum-list">
+                    <li class="wind">Wind |<span class="wind-speed"></span>m/s</li>
+                    <li class="hum">Hum |<span class="hum-condition"></span>%</li>
+                </ul>
+            </div>    
+        </div>
+        <div class="forecast">
+                
+        </div>  
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
